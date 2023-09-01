@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-todo.component.css']
 })
 export class AddTodoComponent {
-
+  title = "Somil's work"
+  constructor(){
+    setTimeout(() => {
+      this.title = "Auto working"
+    }, 500);
+  }
 }
